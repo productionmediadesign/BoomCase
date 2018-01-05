@@ -1,9 +1,9 @@
 @echo off
 
-title BoomCase - Google App Engine
+title ThumpCase - Google App Engine
 
 echo ========== ========== ========== ========== ==========
-echo Starting BoomCase on Google App Engine Locally..
+echo Starting ThumpCase on Google App Engine Locally..
 echo ========== ========== ========== ========== ==========
 
 echo ========== ========== ========== ========== ==========
