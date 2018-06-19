@@ -32,10 +32,10 @@ Video Background Examples:
 
 ---------- ---------- ---------- ---------- ----------
 
-* GitHub Project Repository: <https://github.com/pathaugen/boomcase>
-* Travis CI Builds: <https://travis-ci.org/pathaugen/boomcase>
-* Google App Engine URL: <https://pmd-boomcase.appspot.com/>
-* Design Firm Friendly URL: <https://boomcase.productionmediadesign.com/>
+* GitHub Project Repository: <https://github.com/productionmediadesign/ThumpCase>
+* Travis CI Builds: <https://travis-ci.com/productionmediadesign/ThumpCase> (Legacy: <https://travis-ci.org/productionmediadesign/ThumpCase> )
+* Google App Engine URL: <https://pmd-thumpcase.appspot.com/>
+* Design Firm Friendly URL: <https://thumpcase.productionmediadesign.com/>
 
 ---------- ---------- ---------- ---------- ----------
 
