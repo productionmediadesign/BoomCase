@@ -1,19 +1,30 @@
 
 
-application: pmd-boomcase
+#application: pmd-thumpcase
 runtime: go
 api_version: go1
 
-# ---------- ---------- ---------- ---------- ----------
-version: 2016-12-xx-a
-#
-# Changelog: Major Changes
-# Clicking on drivers under customization populates the edit form for that driver
-#
+
+# ---------- START: Instructions ----------
+# Running Application on Local Machine
+# NOTE: Requires Google App Engine Installed/Configured
+# First: Check for updates:
+# > gcloud components update
+# Second: Go to the app folder and run the app:
+# > cd [path to app]
+# > dev_appserver.py app.yaml
+# Third: Check out the app locally:
+# http://localhost:8080/
+# Finally: Deploy Application:
+# > gcloud app deploy --project pmd-thumpcase --version 2017-12-xy-z
+# ---------- END: Instructions ----------
+
+
+# ---------- START: TODO ---------- ---------- ---------- ----------
+# Major Tasks
 # TODO: Convert driver multiplier field into slider with graphical reference changing size
 #
-# Changelog: Minor Changes
-#
+# Minor Tasks
 # TODO: New Extra Options for cases (bigger battery, bottle opener, USB, AC power)
 # TODO: When adding drivers, take low/high frequencies and add to case being built
 # TODO: When adding drivers, take weight and add to case being built
@@ -24,14 +35,41 @@ version: 2016-12-xx-a
 # TODO: Sold Out appears when case is marked as sold (also hides Purchase Now button)
 # TODO: Uploading driver or case image, can cancel once see the preview
 #
-# Changelog: Bugs
-
-# CURRENT: existingdatastoreid and blobkey need to distinguish case and driver
-# CURRENT: Display of drivers properly takes into account circle flag
-
+# Bugs
 # TODO: Drivers can be 0.25 lbs and still work
 # TODO: Creating driver (not edit) shouldn't show a image preview
 # TODO: "None Currently Selected" needs to disappear when adding drivers to case
+# ---------- END: TODO ---------- ---------- ---------- ----------
+
+
+# ---------- START: CHANGELOG ---------- ---------- ---------- ----------
+
+# ---------- ---------- ---------- ---------- ----------
+#version: 2017-12-10-b
+# - Polish on the email popup form
+# ---------- ---------- ---------- ---------- ----------
+
+# ---------- ---------- ---------- ---------- ----------
+#version: 2017-12-10-a
+# - Style on email form wan't coming in
+# ---------- ---------- ---------- ---------- ----------
+
+# ---------- ---------- ---------- ---------- ----------
+#version: 2017-12-09-a
+#
+# Changelog: Major Changes
+# - Clicking on drivers under customization populates the edit form for that driver
+# - Revamp of page organization for launch
+# - Checking out starts email form
+#
+# Changelog: Minor Changes
+# - /admin when going into add case/driver, detection and note for logged in but non-admin
+# - When case is sold, mark appropriately
+# - When case is sold, customization buttons don't appear
+#
+# Changelog: Bugs
+# CURRENT: existingdatastoreid and blobkey need to distinguish case and driver
+# CURRENT: Display of drivers properly takes into account circle flag
 # ---------- ---------- ---------- ---------- ----------
 
 # ---------- ---------- ---------- ---------- ----------
@@ -61,36 +99,62 @@ version: 2016-12-xx-a
 # Editing a case overwrites the case image with driver image (blobkey value error in form)
 # ---------- ---------- ---------- ---------- ----------
 
+# ---------- END: CHANGELOG ---------- ---------- ---------- ----------
+
+
+# ---------- START: Golang Vendored Packages ---------- ---------- ---------- ----------
+
+# jordan-wright/email   v2.2      https://github.com/jordan-wright/email/releases
+
+# ---------- START: Mailgun Packages ----------
+# mailgun/mailgun-go    v1.1.0    https://github.com/mailgun/mailgun-go/releases
+# mailgun/log           --        https://github.com/mailgun/log
+# thrawn01/args         v0.1.0    https://github.com/thrawn01/args/releases
+# pkg/errors            v0.8.0    https://github.com/pkg/errors/releases
+# fatih/structs         v1.0.0    https://github.com/fatih/structs
+# drhodes/golorem       --        https://github.com/drhodes/golorem
+# go-ini/ini            v1.32.0   https://github.com/go-ini/ini/releases
+# spf13/cast            v1.1.0    https://github.com/spf13/cast/releases
+# fsnotify/fsnotify     v1.4.2    https://github.com/fsnotify/fsnotify/releases     gopkg.in/fsnotify.v1
+# onsi/gomega           v1.2.0    https://github.com/onsi/gomega/releases           REMOVED
+# onsi/ginkgo           v1.4.0    https://github.com/onsi/ginkgo/releases           REMOVED
+# go-yaml/yaml          --        https://github.com/go-yaml/yaml/tree/v1           gopkg.in/yaml.v2
+# ---------- START: Mailgun Packages ----------
+
+# ---------- END: Golang Vendored Packages ---------- ---------- ---------- ----------
+
+
+# ---------- START: handlers ---------- ---------- ---------- ----------
 handlers:
 - url: /resources/stylesheets
   static_dir: resources/stylesheets
-  
+
 - url: /resources/javascript
   static_dir: resources/javascript
-  
+
 - url: /resources/external
   static_dir: resources/external
-  
-  
+
 # All URLs ending in .gif .png .jpg are treated as paths to
 # static files in the resources/images/ directory. The URL pattern is a
 # regular expression, with a grouping that is inserted into the path to the file.
 - url: /(.*\.(gif|png|jpg))$
   static_files: resources/images/\1
   upload: resources/images/.*\.(gif|png|jpg)$
-  
-  
+
 - url: /(.*\.(webm|mp4))$
   static_files: resources/videos/\1
   upload: resources/videos/.*\.(webm|mp4)$
-  
-  
+
 - url: /(.*\.(eot|woff|ttf|svg))$
   static_files: resources/fonts/\1
   upload: resources/fonts/.*\.(ot|woff|ttf|svg)$
-  
-  
+
 - url: /.*
   script: _go_app
-  
-  
+# ---------- END: handlers ---------- ---------- ---------- ----------
+
+# ---------- ---------- ---------- ---------- ----------
+skip_files:
+- resources/videos/example2.mp4
+# ---------- ---------- ---------- ---------- ----------

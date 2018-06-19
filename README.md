@@ -8,21 +8,23 @@ Current Version Deployed to Google App Engine:
 
 ---------- ---------- ---------- ---------- ----------
 
-BoomCase
-========
+ThumpCase
+=========
 
-BoomCase web applications in Golang on Google App Engine.
+ThumpCase web applications in Golang on Google App Engine.
 
 Created by Production Media Design (<http://www.productionmediadesign.com/>) to both help educate programmers in training as well as showcase talent to future clients.
 
+Original application version created for "BoomCase" before the company split as Boomcase and ThumpCase.
+
 ---------- ---------- ---------- ---------- ----------
 
-Original Pitch to BoomCase
+Original Pitch to ThumpCase
 --------------------------
-Boomcase Webapp Overview:
+ThumpCase Webapp Overview:
 
 1. Backend Code: Create flexible backend that has code which can power multiple webapps into the future
-2. Custom Boomcase Webapp: Create webapp based on backend code which enables customers to customize and build their own Boomcase
+2. Custom ThumpCase Webapp: Create webapp based on backend code which enables customers to customize and build their own ThumpCase
 3. Boombarrel Options Webapp: Create webapp based on backend code which enables customers to select options for the Boombarrel as well as fronend splash with visual design including looping video backgrounds (as requested):
 
 Video Background Examples:
@@ -60,7 +62,7 @@ Feature List
   * Continuous Integration via Travis CI autodeploys on GitHub master branch checkin
 
 * Frontend:
-  * Responsive design combining look of two separate web properties 
+  * Responsive design combining look of two separate web properties
 
 * BoomBarrel Showcase:
   * Full video background: Autoplay web and mobile
@@ -68,7 +70,7 @@ Feature List
   * Mouseover div image zoom transitions
   * TODO: Animated transition on page anchor links
 
-* BoomCase Customizer:
+* ThumpCase Customizer:
   * Adding speaker drivers to case custimization dynamically
   * Automatic price calculations based on drivers and features
   * Drag and drop visual customization of drivers on cases: Web and mobile
@@ -83,4 +85,3 @@ Resources
 * Markdown Syntax: <http://daringfireball.net/projects/markdown/syntax>
 
 ---------- ---------- ---------- ---------- ----------
-
