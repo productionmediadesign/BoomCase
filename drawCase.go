@@ -6,7 +6,7 @@ import (
 	"net/http"
 	//"time"
 
-	// https://github.com/golang/appengine vendored into src/google.golang.org/appengine
+	// TODO: https://github.com/golang/appengine vendored into src/google.golang.org/appengine
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"
 

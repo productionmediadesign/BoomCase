@@ -21,6 +21,18 @@ Install Golang:
 * Test Installation:
   * Open command prompt:
   * > go version
+* Set GOPATH:
+  * Create a directory: C:\go-work
+    * Create subfolders: C:\go-work\src, C:\go-work\bin
+  * Start > "environment variable" > Click: "Edit the System Environment Variables"
+  * Click: "Environment Variables" button
+  * Click: "New..."
+    * Variable name: GOPATH
+    * Variable value: C:\go-work
+* Get packages needed:
+  * > go get google.golang.org/appengine
+  * > go get github.com/jordan-wright/email
+  * > go get golang.org/x/text/encoding/htmlindex
 
 Install Git:
 * https://git-scm.com/download/win

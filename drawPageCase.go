@@ -2,10 +2,10 @@
 package main
 
 import (
-    //"fmt"
-    //"net/http"
+  //"fmt"
+  //"net/http"
 
-    "golang.org/x/net/context"
+  "golang.org/x/net/context"
 
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"
@@ -14,9 +14,9 @@ import (
 
 	//"appengine/blobstore"
 
-    //"os"
-    //"io/ioutil"
-    "strings"
+  //"os"
+  //"io/ioutil"
+  "strings"
 	"strconv"
 )
 
