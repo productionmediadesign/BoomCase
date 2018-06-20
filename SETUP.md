@@ -63,6 +63,8 @@ Run Application Locally:
   * > START.bat
 * Manual Mode:
   * > dev_appserver.py app.yaml
+* Run clean:
+  * > dev_appserver.py --clear_datastore=yes app.yaml
 
 Deploy Application to Google App Engine:
 * > gcloud app deploy --version pre-prod-1 --project thumpcase
