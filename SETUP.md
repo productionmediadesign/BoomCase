@@ -5,7 +5,8 @@ Google App Engine Setup
 -----------------------
 
 Google App Engine Setup via web (use Google Chrome):
-* x
+* https://console.cloud.google.com/appengine/
+* Create a new project: "thumpcase" or any non-taken name
 
 PC Setup
 --------
@@ -22,7 +23,11 @@ Install Golang:
   * > go version
 
 Install Git:
-* x
+* https://git-scm.com/download/win
+* Make sure to install the UNIX tools on installation and to use Command Prompt
+* Test installation:
+  * Open command prompt:
+  * > git --version
 
 Install Google Cloud:
 * https://cloud.google.com/appengine/downloads
@@ -33,7 +38,7 @@ Install Google Cloud:
   * https://cloud.google.com/sdk/docs/
     * Install via the Cloud SDK Installer
     * Once install is complete, command line opens and asks to login (do it)
-    * Select the cloud project pmd-thumpcase (that you created earlier via web)
+    * Select the cloud project thumpcase (that you created earlier via web)
     * NOTE: Google Cloud SDK Folder:
       * > cd "C:\Users\%USERNAME%\AppData\Local\Google\Cloud SDK"
   * Enable command completion in shell:
@@ -54,7 +59,10 @@ Set CLOUDSDK_PYTHON Environment Variable:
   * Variable value: C:\Python27\python.exe
 
 Run Application Locally:
-* > dev_appserver.py app.yaml
+* Automatic Mode:
+  * > START.bat
+* Manual Mode:
+  * > dev_appserver.py app.yaml
 
 Deploy Application to Google App Engine:
-* > gcloud app deploy --version pre-prod-5 --project my-sample-app
+* > gcloud app deploy --version pre-prod-1 --project thumpcase
