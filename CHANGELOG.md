@@ -18,6 +18,7 @@ Major:
 * Complete addition of all webpages HTML, CSS and links
 * Rebrand to ThumpCase complete
 * Entire website format complete
+* Getting Travis CI to pass
 
 ----------
 
