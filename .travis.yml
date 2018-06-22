@@ -2,14 +2,14 @@
 language: go
 
 go:
-- 1.x
-- 1.6
-- 1.7.x
+- "1.10.x"
 - master
 
 install:
 # Travis CI builds require "appengine" to function correctly
 - go get google.golang.org/appengine
+- go get github.com/jordan-wright/email
+- go get golang.org/x/text/encoding/htmlindex
 
 #deploy:
 #  provider: gae
