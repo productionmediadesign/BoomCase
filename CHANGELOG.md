@@ -5,10 +5,19 @@ Changelog - ThumpCase
 Tasks To Do:
 
 Minor:
-* x
+* none
 
 Major:
-* x
+* none
+
+----------
+
+2018-06-21 Thursday
+
+* @ Geekhubs Valencia, Spain
+* Complete addition of all webpages HTML, CSS and links
+* Rebrand to ThumpCase complete
+* Entire website format complete
 
 ----------
 

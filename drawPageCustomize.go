@@ -14,9 +14,9 @@ import (
 	"google.golang.org/appengine/image"
 	//"appengine/blobstore"
 
-    //"os"
-    //"io/ioutil"
-    "strings"
+  //"os"
+  //"io/ioutil"
+  "strings"
 	"strconv"
 )
 

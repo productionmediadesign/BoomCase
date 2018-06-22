@@ -3,12 +3,12 @@ package main
 
 import (
 	"net/http"
-	"net/smtp"
+	//"net/smtp"
 
   //"gopkg.in/mailgun/mailgun-go.v1"
   //"github.com/mailgun/mailgun-go/mailgun"
 
-	"github.com/jordan-wright/email"
+	//"github.com/jordan-wright/email"
 )
 
 
@@ -86,21 +86,21 @@ Unless there is a major design issue that should be addressed you will receive a
 		//panic(err)
 	//}
 
-	e := email.NewEmail()
-	e.From = "Production Media Design <postmaster@mg.productionmediadesign.com>"
-	e.To = []string{userEmail}
-	//e.Bcc = []string{"test_bcc@example.com"}
-	//e.Cc = []string{"info@productionmediadesign.com"}
-	e.Subject = "BoomCase Email Order for user@domain.com"
-	e.Text = []byte(textEmail)
-	e.HTML = []byte(htmlEmail)
-	//e.AttachFile("test.txt")
-	//e.AttachFile("/boomcase-logo.png")
-	e.Send("smtp.mailgun.org:587", smtp.PlainAuth("", "postmaster@mg.productionmediadesign.com", "bbcKEYGOESHERE", "smtp.mailgun.org"))
+	//e := email.NewEmail()
+	//e.From = "Production Media Design <postmaster@mg.productionmediadesign.com>"
+	//e.To = []string{userEmail}
+		//e.Bcc = []string{"test_bcc@example.com"}
+		//e.Cc = []string{"info@productionmediadesign.com"}
+	//e.Subject = "BoomCase Email Order for user@domain.com"
+	//e.Text = []byte(textEmail)
+	//e.HTML = []byte(htmlEmail)
+		//e.AttachFile("test.txt")
+		//e.AttachFile("/boomcase-logo.png")
+	//e.Send("smtp.mailgun.org:587", smtp.PlainAuth("", "postmaster@mg.productionmediadesign.com", "bbcKEYGOESHERE", "smtp.mailgun.org"))
 	// ========== ========== ========== ========== ==========
 
 
-  output += "sendEmail() CONTENT"
+  output += "sendEmail() CONTENT" + " -- " + textEmail + " -- " + htmlEmail
 
   return output
 }
