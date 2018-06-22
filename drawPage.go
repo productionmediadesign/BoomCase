@@ -67,7 +67,7 @@ func drawPage(r *http.Request, ctx context.Context) (string) { // context.Contex
 
 	//if pageRequested == "" { pageRequested = "home" }
   if pageRequested == "admin" { pageRequested = "home" } // "home" is the original dashboard page of selections
-  if pageRequested == "" { pageRequested = "customize" }
+  if pageRequested == "" { pageRequested = "home" }
 	pageRequestedTitle := pageRequested
 
 	// Using the pageRequested, pull the .html and .css for the selected resource else send a 404 .html/.css

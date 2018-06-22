@@ -78,5 +78,12 @@ Run Application Locally:
 * Run clean:
   * > dev_appserver.py --clear_datastore=yes app.yaml
 
+Make Changes To Webpages:
+* Each URL matches an HTML and CSS file:
+  * Example: /about
+  * Edit HTML: /resources/html/about.html
+  * Edit CSS: /resources/html/about.css
+* Add new pages just by creating new HTML/CSS files!
+
 Deploy Application to Google App Engine:
 * > gcloud app deploy --version pre-prod-1 --project thumpcase
