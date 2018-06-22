@@ -3,7 +3,7 @@ language: go
 
 go:
 - "1.10.x"
-- master
+#- master # master takes quite some time, not needed under normal situations
 
 install:
 # Travis CI builds require "appengine" to function correctly
