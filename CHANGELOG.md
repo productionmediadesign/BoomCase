@@ -12,6 +12,18 @@ Major:
 
 ----------
 
+2018-08-13 Monday
+
+* @ Folsom, CA
+* Each website page integration of web services:
+  * Store: Etsy Shop
+  * Gallery: Pinterest Boards
+  * Blog: Tumblr Posts
+* Social buttons linking to ThumpCase pages
+* Clean up of code
+
+----------
+
 2018-06-21 Thursday
 
 * @ Geekhubs Valencia, Spain
