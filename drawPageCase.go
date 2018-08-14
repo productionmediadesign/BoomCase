@@ -108,9 +108,12 @@ func drawPageCase(ctx context.Context, output string, pageRequestedVariables1 st
       } else {
         availabilityString := `
           <br />
+
+          <!--
           <a class="btn btn-primary" id="trigger-purchase-now" aria-label="Purchase Now">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase Now
           </a>
+          -->
         `
         output = strings.Replace(output, "<AVAILABILITY>", availabilityString, -1)
 

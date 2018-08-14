@@ -36,7 +36,7 @@ func init() {
 func main() {
 	appengine.Main()
 
-	fmt.Println("BoomCase Google App Engine Application. Deploy code to Google App Engine (GAE) to utilize. No command line functions available.")
+	fmt.Println("ThumpCase Google App Engine Application. Deploy code to Google App Engine (GAE) to utilize. No command line functions available.")
 
 	// TODO: Creation of offline BoomCase customization web server application for POS kiosks utilizing same code
 }

@@ -6,6 +6,52 @@
   </div>
 
   <div style="max-width:800px;margin:auto;">
-    [BLOG]
+
+
+    <div class='tumblrInjectionLine'><a id='tumblrInjection1' href=''><img id='tumblrInjectionPhoto1' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText1'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection2' href=''><img id='tumblrInjectionPhoto2' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText2'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection3' href=''><img id='tumblrInjectionPhoto3' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText3'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection4' href=''><img id='tumblrInjectionPhoto4' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText4'></p><hr><br></div>
+    <div class='tumblrInjectionLine'><a id='tumblrInjection5' href=''><img id='tumblrInjectionPhoto5' border='0' style='margin:3px' src='' alt='' /></a><p id='tumblrInjectionText5'></p></div>
+
+
+    <script type="text/javascript" src="http://thumpcase.tumblr.com/api/read/json?number=5&type=photo"></script>
+    <script type="text/javascript">
+      /* The variable "tumblr_api_read" is now set. */
+      $(document).ready(function() {
+
+        /*
+        document.write(
+          '<a href="' + tumblr_api_read['posts'][0]['url'] +
+          '">Most recent Tumblr post</a>'
+        );
+        */
+
+
+        document.getElementById('tumblrInjectionPhoto1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-500']);
+        document.getElementById('tumblrInjection1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);
+        document.getElementById('tumblrInjectionText1').innerHTML = tumblr_api_read.posts[0]['photo-caption'];
+
+        document.getElementById('tumblrInjectionPhoto2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-500']);
+        document.getElementById('tumblrInjection2').setAttribute('href', tumblr_api_read.posts[1]['url-with-slug']);
+        document.getElementById('tumblrInjectionText2').innerHTML = tumblr_api_read.posts[1]['photo-caption'];
+
+        document.getElementById('tumblrInjectionPhoto3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-500']);
+        document.getElementById('tumblrInjection3').setAttribute('href', tumblr_api_read.posts[2]['url-with-slug']);
+        document.getElementById('tumblrInjectionText3').innerHTML = tumblr_api_read.posts[2]['photo-caption'];
+
+        document.getElementById('tumblrInjectionPhoto4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-500']);
+        document.getElementById('tumblrInjection4').setAttribute('href', tumblr_api_read.posts[3]['url-with-slug']);
+        document.getElementById('tumblrInjectionText4').innerHTML = tumblr_api_read.posts[3]['photo-caption'];
+
+        document.getElementById('tumblrInjectionPhoto5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-500']);
+        document.getElementById('tumblrInjection5').setAttribute('href', tumblr_api_read.posts[4]['url-with-slug']);
+        document.getElementById('tumblrInjectionText5').innerHTML = tumblr_api_read.posts[4]['photo-caption'];
+
+
+      });
+    </script>
+
+
   </div>
 </div>

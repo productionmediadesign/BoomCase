@@ -11,11 +11,12 @@ import (
 
 // ========== START: Define admin authorized emails in a map ========== ========== ========== ==========
 var adminEmails = map[string]bool {
-	"pathaugen": true,               // Patrick Haugen
+	//"pathaugen": true,               // Patrick Haugen
 	"pathaugen@gmail.com": true,		 // Patrick Haugen
-	"DominicOdbert": true,				   // Dominic Odbert
-	"dominicodbert@gmail.com": true, // Dominic Odbert
-	"rex00x@yahoo.com": true,        // JP Odbert
+	//"DominicOdbert": true,				   // Dominic Odbert
+	//"dominicodbert@gmail.com": true, // Dominic Odbert
+	//"rex00x@yahoo.com": true,        // JP Odbert
+	"thumpcase@gmail.com": true,        // JP Odbert
 }
 // ========== END: Define admin authorized emails in a map ========== ========== ========== ==========
 
